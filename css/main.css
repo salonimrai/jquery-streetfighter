@@ -13,7 +13,8 @@ body{
 	padding-left: 40px;
 	height: 494px;
 	width: 659px;
-	position: relative;
+	float: left;
+	display: inline-block;
 }
 
 .streetfighter img{
@@ -30,7 +31,33 @@ body{
 
 #fireball{
 	position: absolute;
-	top: 200px;
+	top: 275px;
 	right: 0px;
 }
 
+.text{
+	height: 494px;
+	width: 700px;
+	left: 660px;
+	padding-top: 40px;
+	color: red;
+	position: absolute;
+	font-family: 'Maven Pro', sans-serif;
+	font-size: 2.25em;
+	font-style: italic;
+}
+
+.text div{
+	width: 350px;
+}
+
+.text div:nth-child(2){
+	float: right;
+}
+
+.text div:nth-child(3){
+	clear: both;
+	padding-top: 50px;
+	width: auto;
+	text-align: center;
+}

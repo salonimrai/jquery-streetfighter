@@ -4,6 +4,8 @@ $('.streetfighter').mouseenter(function() {
     $('#ready').show();
     $('#cool').hide();
     $('#throwing').hide();
+    $('.text div:nth-child(3)').html('THIS TEXT CHANGES').css("color",
+    	"blue");
   });
 
 $('.streetfighter').mouseleave(function() {
@@ -11,6 +13,8 @@ $('.streetfighter').mouseleave(function() {
     $('#ready').hide();
     $('#cool').hide();
     $('#throwing').hide();
+    $('.text div:nth-child(3)').html('NORMAL TEXT').css("color",
+    	"red");
   });
 
 $('.streetfighter').mousedown(function() {
@@ -41,4 +45,22 @@ $('.streetfighter').click(function() {
     },3000)
   });
 
+});
+
+$(document).keydown(function(event){
+	if(event.which==88){
+		$('#standing-still').hide();
+		$('#ready').hide();
+		$('#cool').show();
+		$('#throwing').hide();
+	}
+});
+
+$(document).keyup(function(event){
+	if(event.which==88){
+		$('#standing-still').show();
+		$('#ready').hide();
+		$('#cool').hide();
+		$('#throwing').hide();
+	}
 });
